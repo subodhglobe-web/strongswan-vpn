@@ -1,0 +1,11 @@
+It comes only with Ubnutu distribution.
+
+1) First Install the Packages in the Opeating System.
+# sudo apt update
+# sudo apt install strongswan strongswan-pki libcharon-extra-plugins -y
+
+2) Create directory for CA Certificate
+# mkdir -p ~/pki/{cacerts,certs,private}
+# chmod 700 ~/pki
+
+3) 
