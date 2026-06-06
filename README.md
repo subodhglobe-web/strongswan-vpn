@@ -1,8 +1,9 @@
 Strongswan is an Open-Source IPsec based VPN service. It operates as a keyring daemon, utilizing the internet key exchange (IKEv1/IKEv2) protocols to establish encrypted, secure tunnels between devices, servers and networks.
 
-Benefits for using Strongswan vpn service.
+Benefits of using Strongswan vpn service:-
+It is heavily integreted into the Linux kernel (via XRFM, NETKEY).
+StringSwan IPsec uses specific UDP ports ( 500 and 4500) which are often blocked in restricted networks.
+It can push masive throughput upto 6 GB. 
+It is heavily favoured for site-to-site corporate network due to native handling by hardware firewalls.
+It is highly extensive with plugins for cryptographic algorithms, database backends, RADIUS Integration.
 
-1) Excels at enterprize grade X.509 certificate and smartcard based authentication.
-2) Highly extensive with plugins for cryptographic algorithms, database backends, RADIUS Integration.
-
-Prequisite for Installing Strongswan in AWS.
