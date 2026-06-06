@@ -1,0 +1,25 @@
+Disable TPM error message permanenetly. (Optional)
+# sudo mv /usr/lib/ipsec/plugins/libstrongswan-tpm.so  /usr/lib/ipsec/plugins/libstrongswan-tpm.so.disabled
+# sudo nano /etc/strongswan.d/charon.conf
+
+ADD THE BELOW LINE
+  charon {
+      load_modular = yes
+      plugins {
+          tpm {
+              load = no
+          }
+      }
+  }
+  
+==> Open the fiel or create it. <== 
+# sudo nano /etc/strongswan.d/disable-tpm.conf
+  
+  plugins {
+    tpm {
+        load = no
+    }
+}
+
+==> ReStart the service 
+# sudo systemctl restart strongswan-starter
